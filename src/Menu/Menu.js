@@ -1,11 +1,9 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import React, {useState} from 'react'
+import React from 'react'
 import {Section} from './Section';
-import cloneDeep  from 'lodash/cloneDeep'
 import "./Menu.css"
 import {menuItems} from '../data/menuItems'
-import CallIcon from '@mui/icons-material/Call';
 
 export const Menu = (props) =>{
 
