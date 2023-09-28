@@ -26,6 +26,7 @@ export const Menu = (props) =>{
                             <Section
                                 title={"Sandwhiches"}
                                 items={menuItems}
+                                altText={"sandwhich picture"}
                             />
                         </div>
 

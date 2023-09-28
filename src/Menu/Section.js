@@ -7,39 +7,32 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 Section.propTypes = {
     title: PropTypes.string,
+    altText: PropTypes.string,
     items: PropTypes.array
 }
 export function Section(props){
-    const isMobile = useMediaQuery("min-width:600px")
 
     return (
         <div style={{margin: '16px'}}>
-            <Box className={'section-header-container'}>
-                <Typography
-                    className={'section-header'}
-                    textAlign="center"
-                    variant='h4'
-                >{props.title}</Typography>
-            </Box>
+            <div className={'section-header-container'}>
+                <h4 className={'section-header'}>{props.title}</h4>
+            </div>
             <Grid container>
                 {
                     props.items.map((item, key ) =>{
                         return(
                             <Grid key={key} item xs={12} md={4} style={{padding: '20px'}}>
                                 <Card className={'card'} elevation={5}>
-                                    <Box className={'card-header-container'}>
-                                        <Typography  className={'item-name'} variant={'h5'}>{item.name}</Typography>
-                                        <Typography  className={'item-name'} variant={'h5'}>${`${item.price}`}</Typography>
-                                    </Box>
-                                    <Box className={'card-content'}>
-                                        <img src={item.image} alt={"sandwhich picture"} style={{padding: '16px'}}/>
-                                        <Typography
-                                            className={'item-description'}
-                                            // variant='body1'
-                                        >
+                                    <div className={'card-header-container'}>
+                                        <p  className={'item-name'}>{item.name}</p>
+                                        <p  className={'item-name'}>${`${item.price}`}</p>
+                                    </div>
+                                    <div className={'card-content'}>
+                                        <img src={item.image} alt={props.altText} style={{padding: '4px'}}/>
+                                        <div className={'item-description'}>
                                             {item.description}
-                                        </Typography>
-                                    </Box>
+                                        </div>
+                                    </div>
                                 </Card>
                             </Grid>
                         )

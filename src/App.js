@@ -4,7 +4,7 @@ import {Menu} from "./Menu/Menu"
 
 function App() {
   return (
-      <Routes baseURL="/order-up/#">
+      <Routes baseURL="/order-up">
         <Route path="/" element={<LandingPage/>}/>
         <Route path="/menu" element={<Menu/>}/>
       </Routes>
