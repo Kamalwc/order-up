@@ -15,7 +15,7 @@ export function Section(props){
     return (
         <div style={{margin: '16px'}}>
             <div className={'section-header-container'}>
-                <h4 className={'section-header'}>{props.title}</h4>
+                <div className={'section-header'}>{props.title}</div>
             </div>
             <Grid container>
                 {
