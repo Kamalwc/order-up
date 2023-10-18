@@ -3,6 +3,35 @@
     text-align: center;
 }
 
+.menu-container{
+    margin: 0% 10%;
+    padding: 24px;
+}
+
+@media screen and (max-width: 420px) {
+    .menu-container{
+        margin: auto;
+        padding: 12px;
+    }
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    margin-bottom: 40px;
+}
+
+.logo-image{
+    width: auto;
+}
+
+@media screen and (max-width:800px){
+    .logo-image{
+        width: 100%;
+    }
+}
+
 .sticky-container{
     background-color: #000;
     color: #fff;
@@ -12,6 +41,7 @@
     font-size: 22px;
 
 }
+
 .footer-text .icons{
     padding: 8px;
     display: flex;

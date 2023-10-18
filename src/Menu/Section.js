@@ -2,7 +2,6 @@ import {Card, Box,Grid, Typography } from '@mui/material'
 import {React,useEffect} from 'react'
 import './Menu.css'
 import PropTypes from 'prop-types';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 Section.propTypes = {
@@ -15,7 +14,7 @@ export function Section(props){
     return (
         <div style={{margin: '16px'}}>
             <div className={'section-header-container'}>
-                <div className={'section-header'}>{props.title}</div>
+                {/*<div className={'section-header'}>{props.title}</div>*/}
             </div>
             <Grid container>
                 {
