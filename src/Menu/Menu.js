@@ -42,42 +42,43 @@ export const Menu = (props) =>{
 
             {
                 <>
-                    <div className={'logo-container'} style={{backgroundColor: `${tertiaryColor}`}}>
-                        <p className={'header-text'}  style={{color: `${secondaryFontColor}`}}>Dina's Kitchen</p>
+                    <div className={'header-text'}  className={'logo-container'} style={{backgroundColor: `${tertiaryColor}`}}>
+                        <p className={'header-text-menu'}  style={{color: `${secondaryFontColor}`}}>Dina's</p>
+                        <p  className={'header-text-menu'} style={{color: `${secondaryFontColor}`,}}>Kitchen</p>
                     </div>
 
-                    <div>
+                    <div >
 
-                        <div style={{display:"flex"}}>
+                        <div className={'theme-form'}>
                             <div>
                                 Background Color
                             </div>
                             <input type={"text"} name={'backgroundColor'} onChange={handlePrimaryColorChange}/>
                         </div>
 
-                        <div style={{display:"flex"}}>
+                        <div className={'theme-form'}>
                             <div>
                                 Card Color
                             </div>
                             <input type={"text"} name={'cardColor'} onChange={handleSecondaryColorChange}/>
                         </div>
 
-                        <div style={{display:"flex"}}>
+                        <div className={'theme-form'}>
                             <div>
                                 Banner Color
                             </div>
                             <input type={"text"} name={'cardColor'} onChange={handleTertiaryColorChange}/>
                         </div>
 
-                        <div style={{display:"flex"}}>
+                        <div className={'theme-form'}>
                             <div>
-                                Meni Item Font Color
+                                Menu Item Font Color
                             </div>
                             <input type={"radio"} name={'fontColor'} onChange={handlePrimaryFontColorChange} value={"black"}/>
                             <input type={"radio"} name={'fontColor'} onChange={handlePrimaryFontColorChange} value={"white"}/>
                         </div>
 
-                        <div style={{display:"flex"}}>
+                        <div className={'theme-form'}>
                             <div>
                                Banner & Footer Font Color
                             </div>

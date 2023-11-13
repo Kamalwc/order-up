@@ -20,6 +20,7 @@
     justify-content: center;
     /*background-color: #000;*/
     margin-bottom: 40px;
+    flex-direction: column;
 }
 
 .logo-image{
@@ -112,10 +113,24 @@
 }
 
 .header-text{
-    font-family: 'Prata', serif;
+    font-family: 'Agbalumo', serif;
     text-transform: uppercase;
     font-size: calc(30px + 5vw);
     margin-top:8px;
     text-align: center;
 
+}
+
+.header-text-menu{
+    font-family: 'Agbalumo', serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+.theme-form{
+    display: flex;
+    justify-content: center;
 }
