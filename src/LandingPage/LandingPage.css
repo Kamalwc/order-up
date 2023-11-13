@@ -66,8 +66,10 @@ html {
     text-transform: uppercase;
     border-radius: 10px;
 }
+
+
 .header-text{
-    font-family: 'Prata', serif;
+    font-family: 'Alfa Slab One', serif;
     text-transform: uppercase;
     font-size: calc(30px + 5vw);
     margin-bottom:0;
